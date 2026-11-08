@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js" data-page="home">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#02030a">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Vincent Liu · 数学与机器推理</title>
+<meta name="description" content="Vincent Liu：数学与机器推理。在七部著作中阐述的 Grothendieckian Programme，以及一部亚历山大·格罗滕迪克的传记。">
+<meta name="author" content="Vincent Liu">
+<meta name="tdm-reservation" content="1">
+<link rel="canonical" href="https://alienmuse.space/zh/">
+<link rel="alternate" hreflang="en" href="https://alienmuse.space/">
+<link rel="alternate" hreflang="zh-Hans" href="https://alienmuse.space/zh/">
+<link rel="alternate" hreflang="x-default" href="https://alienmuse.space/">
+<link rel="alternate" type="application/atom+xml" title="Vincent Liu / 发布记录" href="/releases/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vincent Liu / alienmuse.space">
+<meta property="og:title" content="Vincent Liu">
+<meta property="og:description" content="Vincent Liu：数学与机器推理。在七部著作中阐述的 Grothendieckian Programme，以及一部亚历山大·格罗滕迪克的传记。">
+<meta property="og:url" content="https://alienmuse.space/zh/">
+<meta property="og:image" content="https://alienmuse.space/static/img/og/zh-name.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vincent Liu · alienmuse.space">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/static/img/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/orbitron.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/site-cb47f6beda.css">
+<script type="module" src="/static/js/site-V5N6PJQW.js"></script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "@id": "https://alienmuse.space/#site",
+ "name": "Alien Muse",
+ "url": "https://alienmuse.space/",
+ "inLanguage": [
+  "en",
+  "zh-Hans"
+ ],
+ "author": {
+  "@id": "https://alienmuse.space/about/#person"
+ },
+ "copyrightHolder": {
+  "@id": "https://alienmuse.space/about/#person"
+ },
+ "copyrightYear": 2026
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://alienmuse.space/about/#person",
+ "name": "Vincent Liu",
+ "url": "https://alienmuse.space/zh/",
+ "jobTitle": "首席 AI 数学家",
+ "description": "数学与机器推理",
+ "worksFor": {
+  "@type": "Organization",
+  "name": "WiseMotif.ai",
+  "url": "https://wisemotif.ai/"
+ },
+ "identifier": {
+  "@type": "PropertyValue",
+  "propertyID": "ORCID",
+  "value": "0009-0000-8718-222X"
+ },
+ "email": "mailto:vincent.liu@wisemotif.ai",
+ "sameAs": [
+  "https://orcid.org/0009-0000-8718-222X",
+  "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+  "https://www.douyin.com/user/MS4wLjABAAAABQPUA_4H-xVAJSkcdtFBG9FI7caV1x8X29b85RYuLYTDUx0O4NXmIA9MxOw-bEXn",
+  "https://www.xiaohongshu.com/user/profile/5b70b6636b58b70dfff35e1e",
+  "https://www.zhihu.com/people/xing-bo-yun-zhu",
+  "https://x.com/alienustack",
+  "https://www.threads.com/@alienustack",
+  "https://www.instagram.com/alienustack/",
+  "https://www.tiktok.com/@alienustack",
+  "https://www.reddit.com/user/alienustack",
+  "https://github.com/AlienMuse",
+  "https://grothendiecklab.com/zh/",
+  "https://grothendieckmath.com/zh/",
+  "https://alienmuse.github.io/zh/"
+ ]
+}</script>
+</head>
+<body class="p-home">
+<a class="skip t-caps" href="#main">跳到正文</a>
+<canvas class="stage" aria-hidden="true" data-word="name" data-wordmark="/static/img/wordmark-name.png" data-faces="/static/img/cellfaces.png"></canvas>
+<div class="poster" aria-hidden="true"></div>
+<header class="bar" data-in="0.1">
+  <a class="mark t-mark" href="/zh/" aria-current="page"><img class="logo" src="/static/img/logo/mark-60.webp" srcset="/static/img/logo/mark-60.webp 2x, /static/img/logo/mark-90.webp 3x" width="30" height="30" alt="">Alien Muse</a>
+  <button class="menu-btn t-nav" type="button" aria-controls="site-nav" aria-expanded="false" data-open="菜单" data-close="关闭">菜单</button>
+  <nav id="site-nav" aria-label="主导航">
+<a class="t-nav" href="/zh/thought/">思想</a>
+<a class="t-nav" href="/zh/gai-mua/">GAI-MUA</a>
+<a class="t-nav" href="/zh/works/">作品</a>
+<a class="t-nav" href="/zh/open/">开放</a>
+<a class="t-nav" href="/zh/about/">关于</a>
+  </nav>
+<a class="lang t-nav" href="/" hreflang="en" lang="en" title="本页的英文版" aria-label="English"><span class="w">English</span><span class="s" aria-hidden="true">EN</span></a></header>
+<section class="hero" aria-label="Vincent Liu">
+  <p class="kicker t-kicker" data-in="0.3">alienmuse.space</p>
+  <h1 class="name t-display" aria-label="Vincent Liu"><span class="l" aria-hidden="true">V</span><span class="l" aria-hidden="true">I</span><span class="l" aria-hidden="true">N</span><span class="l" aria-hidden="true">C</span><span class="l" aria-hidden="true">E</span><span class="l" aria-hidden="true">N</span><span class="l" aria-hidden="true">T</span><span class="l sp" aria-hidden="true"></span><span class="l" aria-hidden="true">L</span><span class="l" aria-hidden="true">I</span><span class="l" aria-hidden="true">U</span></h1>
+  <p class="bio t-bio" data-in="2.7" data-safe="Mathematics and machine reasoning">数学与机器推理</p>
+  <p class="role t-nav" data-in="3.0" data-safe="Chief AI Mathematician / WiseMotif.ai">首席 AI 数学家 / <a href="https://wisemotif.ai/">WiseMotif.ai</a></p>
+</section>
+<main id="main">
+  <div class="runway" aria-hidden="true"></div>
+
+  <section class="missions wrap" aria-labelledby="missions-h">
+    <h2 class="label t-label" id="missions-h">任务</h2>
+    <div class="cards n2">
+<a class="glass card" href="/zh/works/grothendieckian-programme/">
+        <span class="k t-caps">纲领</span>
+        <span class="h t-card" lang="en">The Grothendieckian Programme</span>
+        <span class="m t-card-m" lang="en">Series 00–07</span>
+        <svg class="go" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg>
+      </a>
+<a class="glass card" href="/zh/works/lives-of-mathematical-thought/">
+        <span class="k t-caps">书系</span>
+        <span class="h t-card">数学思想传记</span>
+        <span class="m t-card-m">亚历山大·格罗滕迪克：三个宇宙中的一生</span>
+        <svg class="go" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="chapter wrap" id="thought" aria-labelledby="thought-h">
+    <header class="ch-head rv">
+  <p class="label t-label" id="thought-l"><span class="no">01</span><span class="lt">思想</span></p>
+<h2 class="ch-title t-work-l" id="thought-h">涨潮</h2>
+</header>
+    <div class="rv"><figure class="q big">
+  <blockquote><p class="t-quote-l">范本是 Grothendieck 的涨潮：难题不在它所在之处被攻击；而是在它周围建起一个理论，直到问题变得自然、自行让开。</p></blockquote>
+  <figcaption class="src t-caps">Series 00 / <span class="nf">§</span>1.2</figcaption>
+  <details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">The model is Grothendieck&#39;s rising sea: a hard problem is not attacked where it stands; a theory is raised around it until the problem becomes natural and gives way.</p></details>
+</figure></div>
+    <ol class="grid4 principles-mini rv">
+<li><a class="glass tile" href="/zh/thought/#principle-1"><span class="no t-caps">原则 01</span><span class="h t-work-m">先改变世界，再面对问题</span></a></li>
+<li><a class="glass tile" href="/zh/thought/#principle-2"><span class="no t-caps">原则 02</span><span class="h t-work-m">结论是一个能粘合的截面</span></a></li>
+<li><a class="glass tile" href="/zh/thought/#principle-3"><span class="no t-caps">原则 03</span><span class="h t-work-m">障碍是一种产出</span></a></li>
+<li><a class="glass tile" href="/zh/thought/#principle-4"><span class="no t-caps">原则 04</span><span class="h t-work-m">结果不强于它的证明</span></a></li>
+<li><a class="glass tile" href="/zh/thought/#principle-5"><span class="no t-caps">原则 05</span><span class="h t-work-m">生成不是验证</span></a></li>
+<li><a class="glass tile" href="/zh/thought/#principle-6"><span class="no t-caps">原则 06</span><span class="h t-work-m">抽象的资格，来自它所保持的东西</span></a></li>
+<li><a class="glass tile" href="/zh/thought/#principle-7"><span class="no t-caps">原则 07</span><span class="h t-work-m">方法是递归的，而且可能失败</span></a></li>
+      <li><a class="glass tile more" href="/zh/thought/#theses"><span class="no t-caps">思想</span><span class="h t-work-m">十二条论纲</span><svg class="go" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg></a></li>
+    </ol>
+  </section>
+
+  <section class="chapter wrap" id="gai-mua" aria-labelledby="gai-mua-h">
+    <header class="ch-head rv">
+  <p class="label t-label" id="gai-mua-l"><span class="no">02</span><span class="lt">GAI-MUA</span></p>
+<h2 class="ch-title t-work-l" id="gai-mua-h" lang="en">Grothendieckian AI-Mathematical Universe Architecture</h2>
+</header>
+    <div class="arch rv">
+      <div class="arch-map"><ol class="cell-list">
+<li><a href="https://grothendiecklab.com/zh/works/grothendieckian-machine/"><span class="hs t-caps">Series 01</span><span class="hr t-role">GAI-MUA</span><span class="hf t-formula">Desc(Φ₁,…,Φ₆)</span></a></li>
+<li><a href="https://grothendiecklab.com/zh/works/topos-native-intelligence/"><span class="hs t-caps">Series 02</span><span class="hr t-role">TOPOS-NATIVE</span><span class="hf t-formula">Sub(X) ≅ Hom(X, Ω)</span></a></li>
+<li><a href="https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/"><span class="hs t-caps">Series 03</span><span class="hr t-role">RIEMANN / GRH</span><span class="hf t-formula">#{Re λ &gt; ½} ≤ min(n₊, n₋)</span></a></li>
+<li><a href="https://grothendiecklab.com/zh/works/fractured-adelic-geometry/"><span class="hs t-caps">Series 04</span><span class="hr t-role">BSD</span><span class="hf t-formula">Δ(X<sub>E</sub>)</span></a></li>
+<li><a href="https://grothendiecklab.com/zh/works/the-archimedean-prism/"><span class="hs t-caps">Series 05</span><span class="hr t-role">HODGE</span><span class="hf t-formula">Δ(X)</span></a></li>
+<li><a href="https://grothendiecklab.com/zh/works/strained-prismatic-geometry/"><span class="hs t-caps">Series 06</span><span class="hr t-role">abc</span><span class="hf t-formula">Spec ℤ → 𝔖</span></a></li>
+<li><a href="https://grothendiecklab.com/zh/works/the-arithmetic-topos/"><span class="hs t-caps">Series 07</span><span class="hr t-role">LANGLANDS</span><span class="hf t-formula">𝔛<sub>𝐙</sub></span></a></li>
+</ol>
+<svg viewBox="40 10 520 580" width="520" height="580" class="honeycomb" role="img" aria-label="七部著作">
+<a href="https://grothendiecklab.com/zh/works/grothendieckian-machine/" aria-label="Series 01：GAI-MUA: The Grothendieckian Machine">
+    <polygon class="c-core" points="391.0,300.0 345.5,378.8 254.5,378.8 209.0,300.0 254.5,221.2 345.5,221.2"/>
+    <text class="hs t-caps" x="300.0" y="270.0">SERIES 01</text>
+    <text class="hr t-role" x="300.0" y="304.0">GAI-MUA</text>
+<text class="hf t-formula" x="300.0" y="338.0">Desc(Φ₁,…,Φ₆)</text>
+  </a>
+<a href="https://grothendiecklab.com/zh/works/topos-native-intelligence/" aria-label="Series 02：GM-Omega-Infinity: Topos-Native Intelligence">
+    <polygon class="c-cyan" points="391.0,133.7 345.5,212.5 254.5,212.5 209.0,133.7 254.5,54.9 345.5,54.9"/>
+    <text class="hs t-caps" x="300.0" y="103.69999999999999">SERIES 02</text>
+    <text class="hr t-role" x="300.0" y="137.7">TOPOS-NATIVE</text>
+<text class="hf t-formula" x="300.0" y="161.7">Sub(X)</text>
+<text class="hf t-formula" x="300.0" y="183.7">≅ Hom(X, Ω)</text>
+  </a>
+<a href="https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/" aria-label="Series 03：Arithmetic Spectral Descent">
+    <polygon class="c-blue" points="535.0,216.9 489.5,295.7 398.5,295.7 353.0,216.9 398.5,138.1 489.5,138.1"/>
+    <text class="hs t-caps" x="444.0" y="186.9">SERIES 03</text>
+    <text class="hr t-role" x="444.0" y="220.9">RIEMANN / GRH</text>
+<text class="hf t-formula" x="444.0" y="244.9">#{Re λ &gt; ½}</text>
+<text class="hf t-formula" x="444.0" y="266.9">≤ min(n₊, n₋)</text>
+  </a>
+<a href="https://grothendiecklab.com/zh/works/fractured-adelic-geometry/" aria-label="Series 04：Fractured Adelic Geometry">
+    <polygon class="c-violet" points="535.0,383.1 489.5,461.9 398.5,461.9 353.0,383.1 398.5,304.3 489.5,304.3"/>
+    <text class="hs t-caps" x="444.0" y="353.1">SERIES 04</text>
+    <text class="hr t-role" x="444.0" y="387.1">BSD</text>
+<text class="hf t-formula" x="444.0" y="421.1">Δ(X<tspan baseline-shift="sub" font-size="72%">E</tspan>)</text>
+  </a>
+<a href="https://grothendiecklab.com/zh/works/the-archimedean-prism/" aria-label="Series 05：The Archimedean Prism">
+    <polygon class="c-blue" points="391.0,466.3 345.5,545.1 254.5,545.1 209.0,466.3 254.5,387.5 345.5,387.5"/>
+    <text class="hs t-caps" x="300.0" y="436.3">SERIES 05</text>
+    <text class="hr t-role" x="300.0" y="470.3">HODGE</text>
+<text class="hf t-formula" x="300.0" y="504.3">Δ(X)</text>
+  </a>
+<a href="https://grothendiecklab.com/zh/works/strained-prismatic-geometry/" aria-label="Series 06：Strained Prismatic Geometry">
+    <polygon class="c-violet" points="247.0,383.1 201.5,461.9 110.5,461.9 65.0,383.1 110.5,304.3 201.5,304.3"/>
+    <text class="hs t-caps" x="156.0" y="353.1">SERIES 06</text>
+    <text class="hr t-role" x="156.0" y="387.1">abc</text>
+<text class="hf t-formula" x="156.0" y="421.1">Spec ℤ → 𝔖</text>
+  </a>
+<a href="https://grothendiecklab.com/zh/works/the-arithmetic-topos/" aria-label="Series 07：The Arithmetic Topos">
+    <polygon class="c-blue" points="247.0,216.9 201.5,295.7 110.5,295.7 65.0,216.9 110.5,138.1 201.5,138.1"/>
+    <text class="hs t-caps" x="156.0" y="186.9">SERIES 07</text>
+    <text class="hr t-role" x="156.0" y="220.9">LANGLANDS</text>
+<text class="hf t-formula" x="156.0" y="254.9">𝔛<tspan baseline-shift="sub" font-size="72%">𝐙</tspan></text>
+  </a>
+</svg></div>
+      <ol class="layers">
+        <li><p class="k t-caps">核心 / Series 01</p><p class="t-body">在其中心，The Grothendieckian Machine（Series 01）把数学世界作为有类型、有版本、可验证的对象来持有，每一项论断的状态都是其类型的一部分。</p><p class="src t-caps">Series 00 / 摘要</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">At its centre, The Grothendieckian Machine (Series 01) holds mathematical worlds as typed, versioned and verifiable objects, with the status of every claim part of its type.</p></details></li>
+        <li><p class="k t-caps">元推理内核 / Series 02</p><p class="t-body">在它之上，Topos-Native Intelligence（Series 02）在一个世界内部像在一个拓扑斯（topos）内部那样推理：上下文是一个 site，证据是一个层，结论是一个整体截面——它只在局部数据能够粘合之处存在——而粘合的失败则是一个可以定位的障碍。</p><p class="src t-caps">Series 00 / 摘要</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">Over it, Topos-Native Intelligence (Series 02) reasons inside a world as inside a topos: a context is a site, the evidence a sheaf, a conclusion a global section that exists only where the local data glue, and a failure to glue an obstruction that can be located.</p></details></li>
+        <li><p class="k t-caps">五个研究课题 / Series 03–07</p><p class="t-body">在两者周围，五个研究课题（Series 03–07）——黎曼猜想及其推广、Birch–Swinnerton-Dyer 猜想、Hodge 猜想、abc 猜想与 Langlands 纲领——把递归式数学发现（recursive mathematical discovery）的方法完整地走一遍：提出一个结构，用答案已知的情形检验它，在它经受住检验之处加以抽象，再重新提出问题；失败的部分被保留下来，成为一个障碍、一个缺口或一项检验。</p><p class="src t-caps">GitHub / Approach</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">Around them, five research subjects (Series 03–07) — the Riemann Hypothesis and its generalisation, the conjecture of Birch and Swinnerton-Dyer, the Hodge conjecture, the abc conjecture and the Langlands programme — carry the method of recursive mathematical discovery through in full: a structure is proposed, tested against the cases in which the answer is known and abstracted where it survives, and the question is posed again; what fails is kept, as an obstruction, a gap or a test.</p></details></li>
+      </ol>
+    </div>
+    <p class="actions rv"><a class="btn t-caps" href="/zh/gai-mua/">GAI-MUA<svg class="go" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg></a><a class="btn ghost t-caps" href="https://grothendiecklab.com/zh/machine/">grothendiecklab.com</a></p>
+  </section>
+
+  <section class="chapter wrap" id="works" aria-labelledby="works-l">
+    <header class="ch-head rv">
+  <p class="label t-label" id="works-l"><span class="no">03</span><span class="lt">作品</span></p>
+<p class="lead t-lede">2 个作品集 / 9 部作品</p>
+</header>
+    <div class="coll rv" id="c-grothendieckian-programme">
+      <p class="k t-caps">纲领 / Series 00–07</p>
+      <h3 class="coll-title t-work-xl" lang="en"><a href="/zh/works/grothendieckian-programme/">The Grothendieckian Programme</a></h3>
+<p class="sub t-sub" lang="en">Recursive Mathematical Discovery in the Age of Machine Reasoning</p>
+        <ol class="shelf">
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/programme/" aria-label="The Grothendieckian Programme / grothendiecklab.com" title="grothendiecklab.com/zh/programme"><img src="/static/img/covers/series-00.webp" width="480" height="674" alt="封面：The Grothendieckian Programme" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-00">
+        <span class="k t-caps">Series 00<span class="wide-only"> / 总纲</span></span>
+        <span class="h t-shelf" lang="en">The Grothendieckian Programme</span>
+        <span class="m t-caps">1 卷 / 53 页</span>
+      </a>
+    </div>
+  </li>
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/works/grothendieckian-machine/" aria-label="GAI-MUA: The Grothendieckian Machine / grothendiecklab.com" title="grothendiecklab.com/zh/works/grothendieckian-machine"><img src="/static/img/covers/series-01.webp" width="480" height="678" alt="封面：GAI-MUA: The Grothendieckian Machine" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-01">
+        <span class="k t-caps">Series 01<span class="wide-only"> / GAI-MUA</span></span>
+        <span class="h t-shelf" lang="en">GAI-MUA: The Grothendieckian Machine</span>
+        <span class="m t-caps">6 卷 / 14,905 页</span>
+      </a>
+    </div>
+  </li>
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/works/topos-native-intelligence/" aria-label="GM-Omega-Infinity: Topos-Native Intelligence / grothendiecklab.com" title="grothendiecklab.com/zh/works/topos-native-intelligence"><img src="/static/img/covers/series-02.webp" width="480" height="678" alt="封面：GM-Omega-Infinity: Topos-Native Intelligence" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-02">
+        <span class="k t-caps">Series 02<span class="wide-only"> / TOPOS-NATIVE</span></span>
+        <span class="h t-shelf" lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span>
+        <span class="m t-caps">5 卷 / 4,020 页</span>
+      </a>
+    </div>
+  </li>
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/" aria-label="Arithmetic Spectral Descent / grothendiecklab.com" title="grothendiecklab.com/zh/works/arithmetic-spectral-descent"><img src="/static/img/covers/series-03.webp" width="480" height="678" alt="封面：Arithmetic Spectral Descent" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-03">
+        <span class="k t-caps">Series 03<span class="wide-only"> / RIEMANN / GRH</span></span>
+        <span class="h t-shelf" lang="en">Arithmetic Spectral Descent</span>
+        <span class="m t-caps">4 卷 / 1,549 页</span>
+      </a>
+    </div>
+  </li>
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/works/fractured-adelic-geometry/" aria-label="Fractured Adelic Geometry / grothendiecklab.com" title="grothendiecklab.com/zh/works/fractured-adelic-geometry"><img src="/static/img/covers/series-04.webp" width="480" height="678" alt="封面：Fractured Adelic Geometry" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-04">
+        <span class="k t-caps">Series 04<span class="wide-only"> / BSD</span></span>
+        <span class="h t-shelf" lang="en">Fractured Adelic Geometry</span>
+        <span class="m t-caps">4 卷 / 571 页</span>
+      </a>
+    </div>
+  </li>
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/works/the-archimedean-prism/" aria-label="The Archimedean Prism / grothendiecklab.com" title="grothendiecklab.com/zh/works/the-archimedean-prism"><img src="/static/img/covers/series-05.webp" width="480" height="678" alt="封面：The Archimedean Prism" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-05">
+        <span class="k t-caps">Series 05<span class="wide-only"> / HODGE</span></span>
+        <span class="h t-shelf" lang="en">The Archimedean Prism</span>
+        <span class="m t-caps">5 卷 / 1,309 页</span>
+      </a>
+    </div>
+  </li>
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/works/strained-prismatic-geometry/" aria-label="Strained Prismatic Geometry / grothendiecklab.com" title="grothendiecklab.com/zh/works/strained-prismatic-geometry"><img src="/static/img/covers/series-06.webp" width="480" height="678" alt="封面：Strained Prismatic Geometry" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-06">
+        <span class="k t-caps">Series 06<span class="wide-only"> / abc</span></span>
+        <span class="h t-shelf" lang="en">Strained Prismatic Geometry</span>
+        <span class="m t-caps">5 卷 / 1,666 页</span>
+      </a>
+    </div>
+  </li>
+<li>
+    <div class="glass book">
+      <a class="cover-link" href="https://grothendiecklab.com/zh/works/the-arithmetic-topos/" aria-label="The Arithmetic Topos / grothendiecklab.com" title="grothendiecklab.com/zh/works/the-arithmetic-topos"><img src="/static/img/covers/series-07.webp" width="480" height="678" alt="封面：The Arithmetic Topos" loading="lazy" decoding="async"></a>
+      <a class="book-text" href="/zh/works/grothendieckian-programme/#series-07">
+        <span class="k t-caps">Series 07<span class="wide-only"> / LANGLANDS</span></span>
+        <span class="h t-shelf" lang="en">The Arithmetic Topos</span>
+        <span class="m t-caps">5 卷 / 2,001 页</span>
+      </a>
+    </div>
+  </li>
+</ol>
+        <dl class="triad">
+<div class="tri">
+    <dt class="t-caps">思想</dt>
+    <dd><p class="t-body">范本是 Grothendieck 的涨潮：难题不在它所在之处被攻击；而是在它周围建起一个理论，直到问题变得自然、自行让开。</p><p class="src t-caps">Series 00 / <span class="nf">§</span>1.2</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">The model is Grothendieck&#39;s rising sea: a hard problem is not attacked where it stands; a theory is raised around it until the problem becomes natural and gives way.</p></details></dd>
+  </div>
+<div class="tri">
+    <dt class="t-caps">方法</dt>
+    <dd><p class="t-body">提出一个结构；用答案已知的情形检验它；把经受住检验的部分抽象到新的情境中，在那里重新提出问题。没有经受住检验的部分并不丢弃：它成为一个猜想、一个缺口或一项证伪测试，带有陈述、状态和在台账中的位置，作为结果的一部分被带向前。</p><p class="src t-caps">Series 00 / <span class="nf">§</span>1.2</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">A structure is proposed; it is tested against the cases in which the answer is known; what survives is abstracted into a new setting, and the question is posed again there. What does not survive is not discarded. It becomes a conjecture, a gap or a falsification test, with a statement, a status and a place in a ledger, and it is carried forward as part of the result.</p></details></dd>
+  </div>
+<div class="tri">
+    <dt class="t-caps">边界</dt>
+    <dd><p class="t-body">七部著作都不声称证明了它所研究的问题。</p><p class="src t-caps">Series 00 / <span class="nf">§</span>1.5</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">None of the seven works claims a proof of the problems it studies.</p></details></dd>
+  </div>
+</dl>
+        <dl class="stats s3 ">
+<div><dt class="t-caps">著作</dt><dd class="t-figure" data-count="7">7</dd></div>
+<div><dt class="t-caps">卷</dt><dd class="t-figure" data-count="34">34</dd></div>
+<div><dt class="t-caps">页</dt><dd class="t-figure" data-count="26,021">26,021</dd></div>
+<div><dt class="t-caps">章</dt><dd class="t-figure" data-count="995">995</dd></div>
+<div><dt class="t-caps">公式</dt><dd class="t-figure" data-count="349,000+">349,000+</dd></div>
+<div><dt class="t-caps">算法</dt><dd class="t-figure" data-count="714">714</dd></div>
+</dl>
+      <p class="actions"><a class="btn t-caps" href="/zh/works/grothendieckian-programme/">The Grothendieckian Programme<svg class="go" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg></a><a class="btn ghost t-caps" href="https://grothendiecklab.com/zh/">grothendiecklab.com</a></p>
+    </div>
+    <div class="coll rv" id="c-lives-of-mathematical-thought">
+      <p class="k t-caps">书系 / 1</p>
+      <h3 class="coll-title t-work-xl"><a href="/zh/works/lives-of-mathematical-thought/">数学思想传记</a></h3>
+<div class="feature">
+  <div class="f-text">
+    <p class="k t-caps">数学思想传记 / 1</p>
+    <h3 class="f-title t-work-l"><a href="/zh/works/lives-of-mathematical-thought/#alexander-grothendieck">亚历山大·格罗滕迪克</a></h3>
+    <p class="sub t-sub">三个宇宙中的一生</p>
+<p class="byline t-caps">Vincent Liu 著 · WiseMotif.ai</p>
+    <p class="t-body f-abs">20 世纪的数学家中，很少有人像亚历山大·格罗滕迪克（1928—2014）那样，改变了如此多的工作前提。本书分十二部、七十二章：从一份连最细小的事实都有争议的家族档案写起，经过集中营、学校和战后的讨论班，直到集体建造一门新的几何；然后是因军方资助而起的决裂、社会运动、大学课堂、私人手稿，以及阿列日省的一个村庄；最后是他去世之后——两处档案、新的版本，以及仍在继续的数学。</p>
+  </div>
+  <figure class="bookcover"><a class="cover-link" href="https://grothendieckmath.com/zh/biography/" aria-label="亚历山大·格罗滕迪克 / grothendieckmath.com" title="grothendieckmath.com/zh/biography"><img src="/static/img/covers/book-alexander-grothendieck-480.webp" srcset="/static/img/covers/book-alexander-grothendieck-480.webp 480w, /static/img/covers/book-alexander-grothendieck-960.webp 960w" sizes="(max-width: 760px) 56vw, 300px" width="480" height="679" alt="封面：亚历山大·格罗滕迪克" loading="lazy" decoding="async"></a></figure>
+</div>        <dl class="triad">
+<div class="tri">
+    <dt class="t-caps">思想</dt>
+    <dd><p class="t-body">与格罗滕迪克相联系的最深刻的变化之一，可以用日常语言说出来。不要只问一个数学对象本身是什么，而要问它如何变化，哪些映射进入它，哪些映射从它出发，它在基变换之后呈现为什么样子，以及哪些构造在这些变化中保持相容。对象并没有消失；它通过一整套关系变得可以理解。</p><p class="src t-caps">序言</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">One of the deepest changes associated with Grothendieck can be stated in ordinary language. Instead of asking only what a mathematical object is by itself, ask how it varies, what maps into it, what maps out of it, how it appears after a change of base, and which constructions remain compatible across those changes. The object does not disappear. It becomes intelligible through a system of relations.</p></details></dd>
+  </div>
+<div class="tri">
+    <dt class="t-caps">方法</dt>
+    <dd><p class="t-body">英雄式的传记向后寻找征兆：童年的一个问题预示了一条定理，流亡成了抽象的源泉，那个孤独的孩子身上，早已藏着日后重塑几何学的那位数学家。本书走另一条路。它把文献放在象征之前，把年代放在命运之前，把关系放在本质之前。</p><p class="src t-caps">序言</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">Heroic biography looks backward for signs: a childhood question anticipates a theorem, exile becomes the source of abstraction, the solitary child already contains the mathematician who will remake geometry. This book takes a different route. It follows documents before symbols, chronology before destiny, and relations before essence.</p></details></dd>
+  </div>
+<div class="tri">
+    <dt class="t-caps">边界</dt>
+    <dd><p class="t-body">贯穿这篇序言的是同一个运动：尺度的改变能让关系变得可见，但每一次扩大都会遇到边界。这个运动决定了本书如何解释数学、集体工作、拒绝、沉默和档案。它也决定了叙述如何在证据停止的地方停下。</p><p class="src t-caps">序言</p><details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">One movement holds this Preface together: a change of scale can make relations visible, but every enlargement meets a boundary. That movement governs how the book explains mathematics, collective work, refusal, silence, and the archive. It also governs how the narrative stops when its evidence stops.</p></details></dd>
+  </div>
+</dl>
+      <p class="actions"><a class="btn t-caps" href="/zh/works/lives-of-mathematical-thought/">数学思想传记<svg class="go" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg></a><a class="btn ghost t-caps" href="https://grothendieckmath.com/zh/">grothendieckmath.com</a></p>
+    </div>
+  </section>
+
+  <section class="chapter wrap" id="open" aria-labelledby="open-h">
+    <header class="ch-head rv">
+  <p class="label t-label" id="open-l"><span class="no">04</span><span class="lt">开放</span></p>
+<h2 class="ch-title t-work-l" id="open-h">57 个问题</h2>
+<p class="lead t-lede">本纲领的每一部著作，都以一份它没有做到的事的清单结尾，陈述得足够精确，可以被接手。</p>
+<p class="src t-caps">Series 00 / <span class="nf">§</span>11.1</p>
+<details class="orig"><summary class="t-caps">英文原文</summary><p class="t-small" lang="en">Every work of the Programme ends with a list of what it has not done, stated precisely enough to be taken up.</p></details>
+</header>
+    <div class="rv"><div class="field compact">
+<div class="f-row">
+    <p class="f-w t-caps"><span class="sw c-cyan"></span>Series 01<span class="f-n">17</span></p>
+    <ol class="cells">
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/1" title="1. 第一次涨潮事件" aria-label="问题 1：第一次涨潮事件">1</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/2" title="2. 耦合的世界–语言循环的一个有界不动点" aria-label="问题 2：耦合的世界–语言循环的一个有界不动点">2</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/3" title="3. 从障碍到猜想" aria-label="问题 3：从障碍到猜想">3</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/4" title="4. 最小扩张问题" aria-label="问题 4：最小扩张问题">4</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/5" title="5. 目标保真" aria-label="问题 5：目标保真">5</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/6" title="6. 泛性质的经验证编码" aria-label="问题 6：泛性质的经验证编码">6</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/7" title="7. AURORA-K0 内核 I：语法与检查" aria-label="问题 7：AURORA-K0 内核 I：语法与检查">7</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/8" title="8. AURORA-K0 内核 II：一个模型与相对一致性" aria-label="问题 8：AURORA-K0 内核 II：一个模型与相对一致性">8</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/9" title="9. 下降执行的七项义务" aria-label="问题 9：下降执行的七项义务">9</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/10" title="10. 不自我授权" aria-label="问题 10：不自我授权">10</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/11" title="11. 没有权威的演化" aria-label="问题 11：没有权威的演化">11</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/12" title="12. 跨实现的确定性同一" aria-label="问题 12：跨实现的确定性同一">12</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/13" title="13. 反例与证明发现的冻结基准" aria-label="问题 13：反例与证明发现的冻结基准">13</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/14" title="14. 语言锻造器（language forge），端到端" aria-label="问题 14：语言锻造器（language forge），端到端">14</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/15" title="15. 有类型基变换的预注册检验" aria-label="问题 15：有类型基变换的预注册检验">15</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/16" title="16. 粘合的四种判断的预注册检验" aria-label="问题 16：粘合的四种判断的预注册检验">16</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/17" title="17. 障碍记录的预注册检验" aria-label="问题 17：障碍记录的预注册检验">17</a></li>
+    </ol>
+  </div>
+<div class="f-row">
+    <p class="f-w t-caps"><span class="sw c-cyan"></span>Series 02<span class="f-n">18</span></p>
+    <ol class="cells">
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/18" title="18. 发现 site" aria-label="问题 18：发现 site">18</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/19" title="19. 能力赌注" aria-label="问题 19：能力赌注">19</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/20" title="20. GRPO 与 RLOO 之间的神经（nerve）基线" aria-label="问题 20：GRPO 与 RLOO 之间的神经（nerve）基线">20</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/21" title="21. 相对障碍作为无支持回答的预测量" aria-label="问题 21：相对障碍作为无支持回答的预测量">21</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/22" title="22. Topos-MoE 对比现代稀疏专家混合" aria-label="问题 22：Topos-MoE 对比现代稀疏专家混合">22</a></li>
+<li id=""><a class="cell c-cyan k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/23" title="23. 防御一个整体一致的谬误" aria-label="问题 23：防御一个整体一致的谬误">23</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/24" title="24. 从编译到流式的下降稳定性" aria-label="问题 24：从编译到流式的下降稳定性">24</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/25" title="25. Beck–Chevalley 方块 12.6.3" aria-label="问题 25：Beck–Chevalley 方块 12.6.3">25</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/26" title="26. 等变缺陷的精确累积界" aria-label="问题 26：等变缺陷的精确累积界">26</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/27" title="27. 限制标架轨迹的局部动力学" aria-label="问题 27：限制标架轨迹的局部动力学">27</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/28" title="28. 下降求解的一个基变换界" aria-label="问题 28：下降求解的一个基变换界">28</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/29" title="29. 训练到服务的偏差" aria-label="问题 29：训练到服务的偏差">29</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/30" title="30. 单调的细化预算" aria-label="问题 30：单调的细化预算">30</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/31" title="31. 歧义轴有多少条？" aria-label="问题 31：歧义轴有多少条？">31</a></li>
+<li id=""><a class="cell c-cyan k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/32" title="32. 无需工程的二阶分歧" aria-label="问题 32：无需工程的二阶分歧">32</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/33" title="33. 一致电路类的形式化" aria-label="问题 33：一致电路类的形式化">33</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/34" title="34. 第二个内核" aria-label="问题 34：第二个内核">34</a></li>
+<li id=""><a class="cell c-cyan k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/35" title="35. 计算–单价性之桥" aria-label="问题 35：计算–单价性之桥">35</a></li>
+    </ol>
+  </div>
+<div class="f-row">
+    <p class="f-w t-caps"><span class="sw c-blue"></span>Series 03<span class="f-n">4</span></p>
+    <ol class="cells">
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/36" title="36. 一个分圆谱的极化" aria-label="问题 36：一个分圆谱的极化">36</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/37" title="37. syntomic 叠上的构造问题 A1" aria-label="问题 37：syntomic 叠上的构造问题 A1">37</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/38" title="38. 来自四元数 THH 的阿基米德 Frobenius" aria-label="问题 38：来自四元数 THH 的阿基米德 Frobenius">38</a></li>
+<li id=""><a class="cell c-blue k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/39" title="39. 去极点 Weil 形式的一个经认证惯性" aria-label="问题 39：去极点 Weil 形式的一个经认证惯性">39</a></li>
+    </ol>
+  </div>
+<div class="f-row">
+    <p class="f-w t-caps"><span class="sw c-violet"></span>Series 04<span class="f-n">4</span></p>
+    <ol class="cells">
+<li id=""><a class="cell c-violet k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/40" title="40. 作为局部项的 Tamagawa 因子" aria-label="问题 40：作为局部项的 Tamagawa 因子">40</a></li>
+<li id=""><a class="cell c-violet k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/41" title="41. 算术流" aria-label="问题 41：算术流">41</a></li>
+<li id=""><a class="cell c-violet k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/42" title="42. 亚导子的秩检测" aria-label="问题 42：亚导子的秩检测">42</a></li>
+<li id=""><a class="cell c-violet k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/43" title="43. 来自流的 murmurations：一项证伪测试" aria-label="问题 43：来自流的 murmurations：一项证伪测试">43</a></li>
+    </ol>
+  </div>
+<div class="f-row">
+    <p class="f-w t-caps"><span class="sw c-blue"></span>Series 05<span class="f-n">5</span></p>
+    <ol class="cells">
+<li id=""><a class="cell c-blue k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/44" title="44. Lean 中的 Hodge 分解" aria-label="问题 44：Lean 中的 Hodge 分解">44</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/45" title="45. 阿基米德棱镜上没有 δ-结构" aria-label="问题 45：阿基米德棱镜上没有 δ-结构">45</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/46" title="46. 十二条棱镜公理的独立性" aria-label="问题 46：十二条棱镜公理的独立性">46</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/47" title="47. 超越极化情形的下降" aria-label="问题 47：超越极化情形的下降">47</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/48" title="48. Voisin 反例的棱镜解读" aria-label="问题 48：Voisin 反例的棱镜解读">48</a></li>
+    </ol>
+  </div>
+<div class="f-row">
+    <p class="f-w t-caps"><span class="sw c-violet"></span>Series 06<span class="f-n">4</span></p>
+    <ol class="cells">
+<li id=""><a class="cell c-violet k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/49" title="49. 闭合形式代数之叶" aria-label="问题 49：闭合形式代数之叶">49</a></li>
+<li id=""><a class="cell c-violet k-machine t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/50" title="50. 走向 prismatic 上同调的一个算法" aria-label="问题 50：走向 prismatic 上同调的一个算法">50</a></li>
+<li id=""><a class="cell c-violet k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/51" title="51. 实位规范" aria-label="问题 51：实位规范">51</a></li>
+<li id=""><a class="cell c-violet k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/52" title="52. 整体基底的粘合问题" aria-label="问题 52：整体基底的粘合问题">52</a></li>
+    </ol>
+  </div>
+<div class="f-row">
+    <p class="f-w t-caps"><span class="sw c-blue"></span>Series 07<span class="f-n">5</span></p>
+    <ol class="cells">
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/53" title="53. 乘法群闸门" aria-label="问题 53：乘法群闸门">53</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/54" title="54. GL$_2$ 的第一项证伪测试" aria-label="问题 54：GL$_2$ 的第一项证伪测试">54</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/55" title="55. 算术底上的 ambidexterity" aria-label="问题 55：算术底上的 ambidexterity">55</a></li>
+<li id=""><a class="cell c-blue k-math t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/56" title="56. 构造整体算术曲线" aria-label="问题 56：构造整体算术曲线">56</a></li>
+<li id=""><a class="cell c-blue k-formal t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues/57" title="57. 算术模式的相干性" aria-label="问题 57：算术模式的相干性">57</a></li>
+    </ol>
+  </div>
+</div></div>
+    <dl class="stats s4 rv">
+      <div><dt class="t-caps">问题</dt><dd class="t-figure" data-count="57">57</dd></div>
+<div><dt class="t-caps">数学问题</dt><dd class="t-figure" data-count="25">25</dd></div>
+<div><dt class="t-caps">机器问题</dt><dd class="t-figure" data-count="19">19</dd></div>
+<div><dt class="t-caps">形式化问题</dt><dd class="t-figure" data-count="13">13</dd></div>
+    </dl>
+    <p class="actions rv"><a class="btn t-caps" href="/zh/open/">开放<svg class="go" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M5.5 2.5 11 8l-5.5 5.5"/></svg></a><a class="btn ghost t-caps" href="https://github.com/AlienMuse/grothendieckian-problems/issues">这些问题的 GitHub issue</a></p>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-id">
+        <a class="mark t-mark" href="/zh/"><img class="logo" src="/static/img/logo/mark-112.webp" srcset="/static/img/logo/mark-112.webp 2x, /static/img/logo/mark-168.webp 3x" width="56" height="56" alt="">Alien Muse</a>
+        <p class="foot-name t-brand">Vincent Liu</p>
+        <p class="foot-role t-caps">首席 AI 数学家 / <a href="https://wisemotif.ai/">WiseMotif.ai</a></p>
+        <p class="foot-mail t-meta"><a href="mailto:vincent.liu@wisemotif.ai">vincent.liu@wisemotif.ai</a></p>
+      </div>
+      <div class="foot-links">
+        <div>
+          <p class="t-caps foot-k" id="f-acc">账号</p>
+          <ul class="icons" aria-labelledby="f-acc">
+<li><a href="https://www.douyin.com/user/MS4wLjABAAAABQPUA_4H-xVAJSkcdtFBG9FI7caV1x8X29b85RYuLYTDUx0O4NXmIA9MxOw-bEXn" rel="me" aria-label="抖音：Alienmuse" title="抖音"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#tiktok"></use></svg></a></li>
+<li><a href="https://www.xiaohongshu.com/user/profile/5b70b6636b58b70dfff35e1e" rel="me" aria-label="小红书：Alienmuse" title="小红书"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#xiaohongshu"></use></svg></a></li>
+<li><a href="https://www.zhihu.com/people/xing-bo-yun-zhu" rel="me" aria-label="知乎：Vincent Liu" title="知乎"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#zhihu"></use></svg></a></li>
+<li><a href="https://x.com/alienustack" rel="me" aria-label="X：@Alienustack" title="X"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#x"></use></svg></a></li>
+<li><a href="https://www.threads.com/@alienustack" rel="me" aria-label="Threads：@alienustack" title="Threads"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#threads"></use></svg></a></li>
+<li><a href="https://www.instagram.com/alienustack/" rel="me" aria-label="Instagram：@alienustack" title="Instagram"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#instagram"></use></svg></a></li>
+<li><a href="https://www.tiktok.com/@alienustack" rel="me" aria-label="TikTok：@alienustack" title="TikTok"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#tiktok"></use></svg></a></li>
+<li><a href="https://www.reddit.com/user/alienustack" rel="me" aria-label="Reddit：u/alienustack" title="Reddit"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#reddit"></use></svg></a></li>
+<li><a href="https://github.com/AlienMuse" rel="me" aria-label="GitHub：AlienMuse" title="GitHub"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#github"></use></svg></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="t-caps foot-k" id="f-rec">学术记录</p>
+          <ul class="pills" aria-labelledby="f-rec">
+<li><a class="t-caps" href="https://orcid.org/0009-0000-8718-222X" rel="me" aria-label="ORCID：0009-0000-8718-222X"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#orcid"></use></svg><span>ORCID</span></a></li>
+<li><a class="t-caps" href="https://scholar.google.com/citations?user=t0sMkU0AAAAJ" rel="me" aria-label="Google Scholar：Vincent Liu"><svg aria-hidden="true" focusable="false"><use href="/static/img/icons.svg#googlescholar"></use></svg><span>Google Scholar</span></a></li>
+<li><a class="t-caps" href="https://zenodo.org/communities/grothendieckian-programme" rel="me" aria-label="Zenodo：The Grothendieckian Programme"><span>Zenodo</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="site-cards" aria-label="网站">
+<li><a class="glass site-card" href="https://grothendiecklab.com/zh/"><img src="/static/img/sites/lab.svg" width="36" height="36" alt=""><span class="h t-sitename">Grothendieck Lab</span><span class="m t-small">Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</span></a></li>
+<li><a class="glass site-card" href="https://grothendieckmath.com/zh/"><img src="/static/img/sites/bio.svg" width="36" height="36" alt=""><span class="h t-sitename">grothendieckmath.com</span><span class="m t-small">传记全书，在线逐章阅读。</span></a></li>
+<li><a class="glass site-card" href="https://wisemotif.ai/"><span class="h t-sitename">WiseMotif.ai</span><span class="m t-small">一家 AI 原生公司。</span></a></li>
+    </ul>
+    <div class="foot-base">
+      <p class="legal t-caps"><span class="nf">©</span> 2026 Vincent Liu。各部作品按其版权页所载的许可。</p>
+      <p class="foot-more t-caps"><a href="/zh/releases/">发布记录</a><a href="https://alienmuse.github.io/zh/">alienmuse.github.io</a><button type="button" class="keys-btn t-caps" aria-haspopup="dialog" aria-controls="keys"><kbd class="t-caps">?</kbd>快捷键</button></p>
+    </div>
+  </div>
+</footer>
+<dialog class="glass keys" id="keys" aria-labelledby="keys-h">
+  <h2 class="t-label" id="keys-h">快捷键</h2>
+  <dl>
+<div><dt><kbd class="t-caps">G</kbd><kbd class="t-caps">H</kbd></dt><dd class="t-caps">首页</dd></div>
+<div><dt><kbd class="t-caps">G</kbd><kbd class="t-caps">T</kbd></dt><dd class="t-caps">思想</dd></div>
+<div><dt><kbd class="t-caps">G</kbd><kbd class="t-caps">G</kbd></dt><dd class="t-caps">GAI-MUA</dd></div>
+<div><dt><kbd class="t-caps">G</kbd><kbd class="t-caps">W</kbd></dt><dd class="t-caps">作品</dd></div>
+<div><dt><kbd class="t-caps">G</kbd><kbd class="t-caps">O</kbd></dt><dd class="t-caps">开放</dd></div>
+<div><dt><kbd class="t-caps">G</kbd><kbd class="t-caps">A</kbd></dt><dd class="t-caps">关于</dd></div>
+<div><dt><kbd class="t-caps">?</kbd></dt><dd class="t-caps">快捷键</dd></div>
+<div><dt><kbd class="t-caps">Esc</kbd></dt><dd class="t-caps">关闭</dd></div>
+  </dl>
+  <p><button class="btn ghost keys-close t-caps" type="button">关闭</button></p>
+</dialog>
+<div class="cue" aria-hidden="true"><span class="t-caps">向下滚动</span><i></i></div>
+<p class="clock" aria-hidden="true"><span class="c-k t-caps">任务时间</span><span class="c-t t-caps" data-clock>T+00:00:00</span></p>
+<div class="progress" aria-hidden="true"><i></i></div>
+</body>
+</html>

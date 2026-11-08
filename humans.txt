@@ -1,0 +1,10 @@
+/* AUTHOR */
+Vincent Liu, Chief AI Mathematician, WiseMotif.ai
+ORCID 0009-0000-8718-222X
+vincent.liu@wisemotif.ai
+
+/* SITE */
+Python, Jinja2, esbuild, Three.js r186
+Type: Orbitron (OFL 1.1) for the site, TGP Pagella (GUST Font License) for the works
+Icons: Simple Icons (CC0 1.0)
+No cookies, no tracking, no third-party requests

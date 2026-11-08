@@ -1,0 +1,146 @@
+{
+ "author": "Vincent Liu",
+ "orcid": "0009-0000-8718-222X",
+ "updated": "2026-11-06",
+ "releases": [
+  {
+   "date": "2026-11-06",
+   "kind": "biography",
+   "series": null,
+   "title": "Alexander Grothendieck: A Life in Three Universes",
+   "doi": "10.5281/zenodo.24013027",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/24013028",
+    "GitHub": "https://github.com/AlienMuse/alexander-grothendieck",
+    "grothendieckmath.com": "https://grothendieckmath.com/"
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "paper",
+   "series": null,
+   "title": "The 57 Grothendieckian Problems",
+   "doi": "10.5281/zenodo.23734426",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23734427",
+    "GitHub": "https://github.com/AlienMuse/grothendieckian-problems"
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "paper",
+   "series": null,
+   "title": "The Rising-Sea Theses",
+   "doi": "10.5281/zenodo.23734423",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23734424"
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "kind": "paper",
+   "series": null,
+   "title": "The Grothendieckian Programme: An Overview",
+   "doi": "10.5281/zenodo.23734421",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23734422"
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "kind": "overview",
+   "series": "00",
+   "title": "The Grothendieckian Programme",
+   "doi": "10.5281/zenodo.23669107",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23669108",
+    "GitHub": "https://github.com/AlienMuse/grothendieckian-programme",
+    "Lab": "https://grothendiecklab.com/programme/"
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "kind": "monograph",
+   "series": "07",
+   "title": "The Arithmetic Topos",
+   "doi": "10.5281/zenodo.23629681",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23629682",
+    "GitHub": "https://github.com/AlienMuse/the-arithmetic-topos",
+    "Lab": "https://grothendiecklab.com/works/the-arithmetic-topos/"
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "kind": "monograph",
+   "series": "06",
+   "title": "Strained Prismatic Geometry",
+   "doi": "10.5281/zenodo.23610034",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23610035",
+    "GitHub": "https://github.com/AlienMuse/strained-prismatic-geometry",
+    "Lab": "https://grothendiecklab.com/works/strained-prismatic-geometry/"
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "monograph",
+   "series": "05",
+   "title": "The Archimedean Prism",
+   "doi": "10.5281/zenodo.23597954",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23597955",
+    "GitHub": "https://github.com/AlienMuse/the-archimedean-prism",
+    "Lab": "https://grothendiecklab.com/works/the-archimedean-prism/"
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "monograph",
+   "series": "04",
+   "title": "Fractured Adelic Geometry",
+   "doi": "10.5281/zenodo.23585887",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23585888",
+    "GitHub": "https://github.com/AlienMuse/fractured-adelic-geometry",
+    "Lab": "https://grothendiecklab.com/works/fractured-adelic-geometry/"
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "monograph",
+   "series": "03",
+   "title": "Arithmetic Spectral Descent",
+   "doi": "10.5281/zenodo.23564898",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23564899",
+    "GitHub": "https://github.com/AlienMuse/arithmetic-spectral-descent",
+    "Lab": "https://grothendiecklab.com/works/arithmetic-spectral-descent/"
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "monograph",
+   "series": "02",
+   "title": "GM-Omega-Infinity: Topos-Native Intelligence",
+   "doi": "10.5281/zenodo.23538544",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23538545",
+    "GitHub": "https://github.com/AlienMuse/topos-native-intelligence",
+    "Lab": "https://grothendiecklab.com/works/topos-native-intelligence/"
+   }
+  },
+  {
+   "date": "2026-10-20",
+   "kind": "monograph",
+   "series": "01",
+   "title": "GAI-MUA: The Grothendieckian Machine",
+   "doi": "10.5281/zenodo.23480696",
+   "published_on": {
+    "Zenodo": "https://zenodo.org/records/23480697",
+    "GitHub": "https://github.com/AlienMuse/grothendieckian-machine",
+    "Lab": "https://grothendiecklab.com/works/grothendieckian-machine/"
+   }
+  }
+ ]
+}
