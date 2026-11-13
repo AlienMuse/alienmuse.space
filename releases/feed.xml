@@ -4,8 +4,16 @@
   <title>Vincent Liu · Releases</title>
   <link rel="self" href="https://alienmuse.space/releases/feed.xml"/>
   <link rel="alternate" href="https://alienmuse.space/releases/"/>
-  <updated>2026-11-06T00:00:00Z</updated>
+  <updated>2026-11-13T00:00:00Z</updated>
   <author><name>Vincent Liu</name><uri>https://alienmuse.space/about/</uri></author>
+  <entry>
+    <id>https://alienmuse.space/works/software/#grothendieckian-universe</id>
+    <title>Grothendieckian Universe</title>
+    <link rel="alternate" href="https://alienmuse.space/works/software/#grothendieckian-universe"/>
+    <updated>2026-11-13T00:00:00Z</updated>
+    <category term="software"/>
+    <summary>Software</summary>
+  </entry>
   <entry>
     <id>https://doi.org/10.5281/zenodo.24013027</id>
     <title>Alexander Grothendieck: A Life in Three Universes</title>

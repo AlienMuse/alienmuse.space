@@ -32,6 +32,7 @@ The works, by collection:
 
 - [The Grothendieckian Programme](https://alienmuse.space/works/grothendieckian-programme/) · <https://grothendiecklab.com/>
 - [Lives of Mathematical Thought](https://alienmuse.space/works/lives-of-mathematical-thought/) · <https://grothendieckmath.com/>
+- [Software](https://alienmuse.space/works/software/) · <https://grothendieck.space/>
 
 In English, with a Chinese edition at [alienmuse.space/zh/](https://alienmuse.space/zh/).
 

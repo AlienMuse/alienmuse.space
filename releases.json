@@ -1,8 +1,18 @@
 {
  "author": "Vincent Liu",
  "orcid": "0009-0000-8718-222X",
- "updated": "2026-11-06",
+ "updated": "2026-11-13",
  "releases": [
+  {
+   "date": "2026-11-13",
+   "kind": "software",
+   "series": null,
+   "title": "Grothendieckian Universe",
+   "doi": null,
+   "published_on": {
+    "GitHub": "https://github.com/AlienMuse/grothendieckian-universe"
+   }
+  },
   {
    "date": "2026-11-06",
    "kind": "biography",
